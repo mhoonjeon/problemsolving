@@ -23,13 +23,15 @@ def binary_search(data, target, low, high):
     Raises:
         TypeError: target이 string으로 주어졌을 때
     """
+    data.sort()  # binary_search를 위해서는 input 리스트가 항상 정렬되어 있어야 한다.
+
     try:
         if low > high:
             return None
 
         mid = (low + high) // 2
 
-        if target == data[mid]:
+        if target == data[mid]:  # target을 찾았을 때
             return mid
 
         elif target > data[mid]:
@@ -80,6 +82,17 @@ class BinarySearchTest(TestCase):
 
         for target in targets:
             self.assertEqual(binary_search(self.list, target, 0, 4), self.list.index(target))
+
+    def test_search_should_be_possible_with_unordered_input_list(self):
+        unordered_list = [4, 3, 2, 1, 5]
+        targets = [
+            1,
+            2,
+            5
+        ]
+
+        for target in targets:
+            self.assertEqual(binary_search(unordered_list, target, 0, 4), self.list.index(target))
 
     def tearDown(self):
         pass
