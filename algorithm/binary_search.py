@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from math import floor
 from unittest import TestCase, main
 
 __author__ = "MH Jeon"
@@ -53,7 +52,7 @@ class BinarySearchTest(TestCase):
         3. target이 data에 없는 경우: return Index of target
     """
     def setUp(self):
-        self.list = [1,2,3,4,5]
+        self.list = [1, 2, 3, 4, 5]
 
     def test_search_should_return_none_if_target_not_in_list(self):
         targets = [
@@ -71,7 +70,9 @@ class BinarySearchTest(TestCase):
         ]
 
         for target in targets:
-            self.assertRaises(TypeError, binary_search, (self.list, target, 0, 4))
+            self.assertRaises(TypeError,
+                              binary_search,
+                              (self.list, target, 0, 4))
 
     def test_search_should_return_target_index_if_targe_is_in_list(self):
         targets = [
@@ -81,7 +82,8 @@ class BinarySearchTest(TestCase):
         ]
 
         for target in targets:
-            self.assertEqual(binary_search(self.list, target, 0, 4), self.list.index(target))
+            self.assertEqual(binary_search(self.list, target, 0, 4),
+                             self.list.index(target))
 
     def test_search_should_be_possible_with_unordered_input_list(self):
         unordered_list = [4, 3, 2, 1, 5]
@@ -92,7 +94,8 @@ class BinarySearchTest(TestCase):
         ]
 
         for target in targets:
-            self.assertEqual(binary_search(unordered_list, target, 0, 4), self.list.index(target))
+            self.assertEqual(binary_search(unordered_list, target, 0, 4),
+                             self.list.index(target))
 
     def tearDown(self):
         pass
