@@ -8,6 +8,9 @@ class Node:
         self.data = data
         self.next = next
 
+    def __repr__(self):
+        return "{} -> {}".format(self.data, self.next)
+
 
 class LinkedList(object):
 
