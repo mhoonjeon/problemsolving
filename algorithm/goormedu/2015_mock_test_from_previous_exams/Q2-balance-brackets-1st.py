@@ -2,6 +2,7 @@
 # UTF-8 encoding when using korean
 
 # 문제에서 주어진 테스트만 통과한다. 코너케이스들은 실패하는듯
+# 실패 이유, stack이 비어있는데 닫힌 괄호가 오는 경우 stack에 더하지 않는다.
 
 
 def is_in_pairs(s):
