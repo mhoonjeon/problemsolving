@@ -2,7 +2,7 @@
 
 This repository contains python implemetation and unit tests for algorithm, data structure and various interview questions.
 
-2018 소프트웨어 마에스트로 코딩 인터뷰를 위해 준비하는 과정을 기록합니다. 이 레포지토리의 코드는 모두 직접 작성하였으나, 때로 문제풀이 도중 막히는 부분은 다음 참고자료들에서 힌트를 얻었습니다. 자세한 내용은 [블로그](https://mhoonjeon.github.io/)내의 `soma` 카테고리의 글들은 참고해주시기 바랍니다.
+이 레포지토리의 코드는 모두 직접 작성하였으나, 때로 문제풀이 도중 막히는 부분은 다음 참고자료들에서 힌트를 얻었습니다. 자세한 내용은 [블로그](https://mhoonjeon.github.io/)내의 `soma` 카테고리의 글들은 참고해주시기 바랍니다.
 
 ## 참고자료
 * [Elements of programming interviews in python](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/),  Adnan Azia
