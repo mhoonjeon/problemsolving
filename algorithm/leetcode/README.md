@@ -10,3 +10,6 @@ Solved problems in [leetcode](https://leetcode.com). Problems with higher accept
 * 2018-03-26
     * [461. Hamming distance](https://leetcode.com/problems/hamming-distance/description/)
     * [657. Judge Route Cirle](https://leetcode.com/problems/judge-route-circle/description/)
+
+* 2018-03-27
+    * [561. Array Partition](https://leetcode.com/problems/array-partition-i/discuss/102161/Python-1-line-(sorting-is-accepted))
